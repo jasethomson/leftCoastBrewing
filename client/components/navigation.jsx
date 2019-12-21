@@ -6,7 +6,9 @@ function Navigation(props){
   return(
     <nav className="navbar navbar-expand-lg navbar-light">
       <a className="navbar-brand" href="#">
-        <img src="./assets/logo.jpg" className="d-inline-block align-top img-fluid" alt=""></img>
+        <div className="w-75">
+          <img src="./assets/logo.jpg" className="d-inline-block align-top img-fluid" alt=""></img>
+        </div>
       </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
