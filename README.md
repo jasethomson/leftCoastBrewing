@@ -1,7 +1,5 @@
 # Left Coast Brewing Copy
 
-<!-- [Live Site](https://brewsource.jasethomson.com/) -->
-
 ## Left Coast Brewing Copy Details
 
 Goal is to replicate the Left Coast Brewing Website.
@@ -9,7 +7,7 @@ Goal is to replicate the Left Coast Brewing Website.
 ### Project Tech Stack
 - JavaScript (ES6)
 - React
-- PHP
+- Node
 - MySQL
 - Bootstrap
 
