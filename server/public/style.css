@@ -1,0 +1,89 @@
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Navigation */
+#navigation{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#logoContainer{
+  height: 10vh;
+  width: 15vh;
+  margin-right: auto;
+  margin-left: 1vw;
+  margin-bottom: auto;
+}
+#logoContainer > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+#navButtons{
+  margin-bottom: auto;
+}
+#navButtons > li{
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 1vw;
+}
+#navButtons > li:hover{
+  color: blue;
+}
+.fa-bars{
+  display: none;
+  margin-right: 3vw;
+  color: lightgray;
+}
+
+/* Navigation Responsive Adjustments */
+#navButtons.responsive{
+  display: block;
+
+}
+#navButtons.responsive > li{
+  display: block;
+  font-size: 2rem;
+  border: 2px solid gray;
+}
+#navButtons.responsive + #bars{
+  display: none;
+}
+
+
+
+
+
+
+
+/* Media Queries */
+/* ipad landscape */
+@media only screen and  (min-width: 769px) and (max-width: 1024px) {
+  #navButtons{
+    display: none;
+  }
+  .fa-bars{
+  display: block;
+  }
+}
+
+/* ipad portait */
+@media only screen and  (min-width: 737px) and (max-width: 768px) {
+  #navButtons{
+      display: none;
+  }
+}
+  /* iphone 6/7/8 landscape */
+@media only screen and  (min-width: 601px) and (max-width: 736px){
+  #navButtons{
+    display: none;
+  }
+}
+  /* iphone 6/7/8 portait */
+@media only screen and  (min-width: 0px) and (max-width: 600px) {
+  #navButtons{
+      display: none;
+  }
+}
