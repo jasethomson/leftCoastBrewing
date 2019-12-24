@@ -13,8 +13,8 @@ body{
   height: 10vh;
   width: 15vh;
   margin-right: auto;
-  margin-left: 2vw;
-  margin-top: 1vh;
+  margin-left: 1vw;
+  margin-bottom: auto;
 }
 #logoContainer > img {
   max-height: 100%;
