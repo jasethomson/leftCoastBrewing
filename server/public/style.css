@@ -1,6 +1,7 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 /* Navigation */
@@ -52,8 +53,55 @@ body{
   display: none;
 }
 
-
-
+/* Homepage */
+#homepage-banner{
+  background-image: url("/assets/homepage-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  max-width: 100%;
+  margin: none;
+}
+#threeImages{
+  display: flex;
+  justify-content: center;
+}
+#homepage-Irvine-Img {
+  background-image: url("/assets/homepage-irvine-logo.png");
+}
+#homepage-beers-Img {
+  background-image: url("/assets/homepage-beers.jpg");
+}
+#homepage-store-Img {
+  background-image: url("/assets/homepage-store-background.jpg");
+}
+#homepage-Irvine-Img,
+#homepage-beers-Img,
+#homepage-store-Img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  width: 29%;
+  margin: 25px;
+  border-radius: 5px;
+}
+.layOver{
+  background-color: rgba(84, 83, 83, .8);
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.threeImagesText{
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: auto;
+}
 
 
 
