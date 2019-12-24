@@ -3,23 +3,43 @@ import App from './app';
 
 function Navigation(props){
 
+  window.addEventListener("click", ()=>{
+    document.getElementById("navButtons").className = "menu";
+    document.getElementById("bars").classList.remove("dispNone");
+
+  })
+
+  function hamburger(){
+    event.stopPropagation();
+    let menu = document.getElementById("navButtons");
+    let bars = document.getElementById("bars");
+    if(menu.className === "menu"){
+      menu.className += " responsive";
+      // bars.classList.add("dispNone");
+
+    } else {
+      menu.className = "menu";
+    }
+  }
   return(
     <div id="navigation">
       <div id="logoContainer">
         <img src="/assets/logo.jpg" alt="logo"/>
       </div>
-      <ul id="navButtons">
-        <li><a>About Us</a></li>
-        <li><a>Beers</a></li>
-        <li><a>Tasting Room</a></li>
-        <li><a>Store</a></li>
-        <li><a>Beer Club</a></li>
-        <li><a>News</a></li>
-        <li><a>Contact</a></li>
+      <ul className="menu" id="navButtons">
+        <li className="menuOption"><a>About Us</a></li>
+        <li className="menuOption"><a>Beers</a></li>
+        <li className="menuOption"><a>Tasting Room</a></li>
+        <li className="menuOption"><a>Store</a></li>
+        <li className="menuOption"><a>Beer Club</a></li>
+        <li className="menuOption"><a>News</a></li>
+        <li className="menuOption"><a>Contact</a></li>
       </ul>
-
+      <i id="bars" className="fa fa-bars fa-3x" onClick={hamburger}></i>
     </div>
   );
 }
+
+
 
 export default Navigation;
