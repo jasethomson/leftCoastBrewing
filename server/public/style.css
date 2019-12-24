@@ -32,7 +32,7 @@ body{
   padding: 0 1vw;
 }
 #navButtons > li:hover{
-  color: blue;
+  color: #43c0eb;
 }
 .fa-bars{
   display: none;
