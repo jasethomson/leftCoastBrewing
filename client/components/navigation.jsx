@@ -3,25 +3,37 @@ import App from './app';
 
 function Navigation(props){
 
+  window.addEventListener("click", ()=>{
+    document.getElementById("navButtons").className = "menu";
+    document.getElementById("bars").classList.remove("dispNone");
+  })
+
+  function hamburger(){
+    event.stopPropagation();
+    let menu = document.getElementById("navButtons");
+    let bars = document.getElementById("bars");
+    if(menu.className === "menu"){
+      menu.className += " responsive";
+    } else {
+      menu.className = "menu";
+    }
+  }
   return(
-    <nav className="navbar navbar-expand-lg navbar-light">
-      <a className="navbar-brand" href="#">
-        <div className="w-75">
-          <img src="./assets/logo.jpg" className="d-inline-block align-top img-fluid" alt=""></img>
-        </div>
-      </a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
-          <a className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
-          <a className="nav-item nav-link" href="#">Features</a>
-          <a className="nav-item nav-link" href="#">Pricing</a>
-          <a className="nav-item nav-link disabled" href="#">Disabled</a>
-        </div>
+    <div id="navigation">
+      <div id="logoContainer">
+        <img src="/assets/logo.jpg" alt="logo"/>
       </div>
-    </nav>
+      <ul className="menu" id="navButtons">
+        <li className="menuOption"><a>About Us</a></li>
+        <li className="menuOption"><a>Beers</a></li>
+        <li className="menuOption"><a>Tasting Room</a></li>
+        <li className="menuOption"><a>Store</a></li>
+        <li className="menuOption"><a>Beer Club</a></li>
+        <li className="menuOption"><a>News</a></li>
+        <li className="menuOption"><a>Contact</a></li>
+      </ul>
+      <i id="bars" className="fa fa-bars fa-3x" onClick={hamburger}></i>
+    </div>
   );
 }
 
