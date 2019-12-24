@@ -16,6 +16,7 @@ body{
   margin-right: auto;
   margin-left: 1vw;
   margin-bottom: auto;
+  margin-top: .5vh;
 }
 #logoContainer > img {
   max-height: 100%;
@@ -102,6 +103,51 @@ body{
   font-size: 3rem;
   margin: auto;
 }
+#homePageAboutUs{
+  display: flex;
+  justify-content: center;
+  padding: 5vh;
+  padding-bottom: 0;
+}
+#homePageAboutUs > h1 {
+  font-weight: bold;
+  color: #566471;
+  margin: 0 1%;
+  margin-top: 1%;
+}
+#aboutLine {
+  background-color: #566471;
+  width: 9vw;
+  height: .5vh;
+  margin: auto;
+  margin-top: 0;
+}
+#aboutUs > p{
+  width: 60%;
+  margin: auto;
+  font-size: 1.4rem;
+  line-height: 2;
+  margin-top: 2vh;
+  color: #566471;
+  text-align: center;
+}
+#aboutButton{
+  display: flex;
+  justify-content: center;
+}
+#aboutButton > button {
+  background-color: #43c0eb;
+  border: none;
+  padding: 1.2vh 1.5vw;
+  font-size: 1.5rem;
+  margin: 1.5%
+}
+#aboutButton > button:hover {
+  border: #43c0eb solid 1px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
 
 
 
