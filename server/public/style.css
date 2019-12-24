@@ -1,20 +1,49 @@
 
+body{
+  font-family: 'Open Sans', sans-serif;
+}
 
+/* Navigation */
 #navigation{
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-/* Navigation */
 #logoContainer{
   height: 10vh;
   width: 15vh;
-  margin-left: 5vw;
+  margin-right: auto;
+  margin-left: 2vw;
   margin-top: 1vh;
 }
 #logoContainer > img {
   max-height: 100%;
   max-width: 100%;
 }
-#navButtons{
-  display: flex;
-  justify-content: space-between;
+#navButtons > li{
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 1vw;
+}
+#navButtons > li:hover{
+  color: blue;
+}
+
+
+
+/* Media Queries */
+/* ipad landscape */
+@media only screen and  (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* ipad portait */
+@media only screen and  (min-width: 737px) and (max-width: 768px) {
+
+}
+  /* iphone 6/7/8 landscape */
+@media only screen and  (min-width: 601px) and (max-width: 736px){
+}
+  /* iphone 6/7/8 portait */
+@media only screen and  (min-width: 0px) and (max-width: 600px) {
 }
