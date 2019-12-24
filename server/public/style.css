@@ -38,6 +38,7 @@ body{
   color: lightgray;
 }
 
+/* Navigation Responsive Adjustments */
 #navButtons.responsive{
   display: block;
 
@@ -50,9 +51,12 @@ body{
 #navButtons.responsive + #bars{
   display: none;
 }
-.dispNone {
 
-}
+
+
+
+
+
 
 /* Media Queries */
 /* ipad landscape */
@@ -62,14 +66,14 @@ body{
   }
   .fa-bars{
   display: block;
-}
+  }
 }
 
 /* ipad portait */
 @media only screen and  (min-width: 737px) and (max-width: 768px) {
   #navButtons{
       display: none;
-    }
+  }
 }
   /* iphone 6/7/8 landscape */
 @media only screen and  (min-width: 601px) and (max-width: 736px){
@@ -81,5 +85,5 @@ body{
 @media only screen and  (min-width: 0px) and (max-width: 600px) {
   #navButtons{
       display: none;
-    }
+  }
 }

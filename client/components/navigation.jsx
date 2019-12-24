@@ -6,7 +6,6 @@ function Navigation(props){
   window.addEventListener("click", ()=>{
     document.getElementById("navButtons").className = "menu";
     document.getElementById("bars").classList.remove("dispNone");
-
   })
 
   function hamburger(){
@@ -15,8 +14,6 @@ function Navigation(props){
     let bars = document.getElementById("bars");
     if(menu.className === "menu"){
       menu.className += " responsive";
-      // bars.classList.add("dispNone");
-
     } else {
       menu.className = "menu";
     }
@@ -39,7 +36,5 @@ function Navigation(props){
     </div>
   );
 }
-
-
 
 export default Navigation;
