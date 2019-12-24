@@ -1,0 +1,20 @@
+
+
+#navigation{
+  display: flex;
+}
+/* Navigation */
+#logoContainer{
+  height: 10vh;
+  width: 15vh;
+  margin-left: 5vw;
+  margin-top: 1vh;
+}
+#logoContainer > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+#navButtons{
+  display: flex;
+  justify-content: space-between;
+}

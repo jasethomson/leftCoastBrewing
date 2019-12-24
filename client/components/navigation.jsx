@@ -4,24 +4,21 @@ import App from './app';
 function Navigation(props){
 
   return(
-    <nav className="navbar navbar-expand-lg navbar-light">
-      <a className="navbar-brand" href="#">
-        <div className="w-75">
-          <img src="./assets/logo.jpg" className="d-inline-block align-top img-fluid" alt=""></img>
-        </div>
-      </a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
-          <a className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
-          <a className="nav-item nav-link" href="#">Features</a>
-          <a className="nav-item nav-link" href="#">Pricing</a>
-          <a className="nav-item nav-link disabled" href="#">Disabled</a>
-        </div>
+    <div id="navigation">
+      <div id="logoContainer">
+        <img src="/assets/logo.jpg" alt="logo"/>
       </div>
-    </nav>
+      <div id="navButtons">
+        <button>About Us</button>
+        <button>Beers</button>
+        <button>Tasting Room</button>
+        <button>Store</button>
+        <button>Beer Club</button>
+        <button>News</button>
+        <button>Contact</button>
+      </div>
+
+    </div>
   );
 }
 
