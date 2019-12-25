@@ -64,6 +64,8 @@ body{
   max-width: 100%;
   margin: none;
 }
+
+/* Homepage 3 Images  */
 #threeImages{
   display: flex;
   justify-content: center;
@@ -103,6 +105,8 @@ body{
   font-size: 3rem;
   margin: auto;
 }
+
+/* Homepage About Us  */
 #homePageAboutUs{
   display: flex;
   justify-content: center;
@@ -148,7 +152,29 @@ body{
   cursor: pointer;
 }
 
+/* Homepage Beer Club  */
+#homePageBeerClub{
+  background-image: url("/assets/homepage-beerClub.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  max-width: 100%;
+}
+#beerClubHeader{
+  display: flex;
+  justify-content: center;
 
+}
+.beerClubLine{
+  background-color: #43c0eb;
+  width: 9vw;
+  height: .5vh;
+  margin-top: 0;
+}
+#beerClubHeader > h1 {
+  color: #43c0eb;
+}
 
 
 

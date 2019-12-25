@@ -34,6 +34,13 @@ function Homepage(){
           <button>LEARN MORE ABOUT US</button>
         </div>
       </div>
+      <div id="homePageBeerClub">
+        <div id="beerClubHeader">
+          <div className="beerClubLine"></div>
+          <h1>LEFT COAST BEER CLUB</h1>
+          <div className="beerClubLine"></div>
+        </div>
+      </div>
     </div>
   );
 }
