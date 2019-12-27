@@ -7,8 +7,6 @@ body{
 /* Navigation */
 #navigation{
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 #logoContainer{
   height: 10vh;
@@ -135,18 +133,18 @@ body{
   color: #566471;
   text-align: center;
 }
-#aboutButton{
+.aboutAndClubButton{
   display: flex;
   justify-content: center;
 }
-#aboutButton > button {
+.aboutAndClubButton > button {
   background-color: #43c0eb;
   border: none;
   padding: 1.2vh 1.5vw;
   font-size: 1.5rem;
   margin: 1.5%
 }
-#aboutButton > button:hover {
+.aboutAndClubButton > button:hover {
   border: #43c0eb solid 1px;
   background-color: whitesmoke;
   cursor: pointer;
@@ -158,24 +156,77 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 40vh;
   max-width: 100%;
 }
 #beerClubHeader{
+  padding-top: 5vh;
   display: flex;
-  justify-content: center;
-
+  justify-content: space-between;
 }
 .beerClubLine{
   background-color: #43c0eb;
-  width: 9vw;
-  height: .5vh;
-  margin-top: 0;
+  width: 30vw;
+  height: .2vh;
+  margin: auto 0;
 }
 #beerClubHeader > h1 {
   color: #43c0eb;
+  font-size: 2.5rem;
+}
+#homeBeerClubText{
+  color: #43c0eb;
+  background-color: rgba(0,0,0,.3);
+  font-size: 1.4rem;
+  width: 25vw;
+  text-align: center;
+  margin: auto;
+  padding: 1%;
+}
+#homePageMap{
+  background-image: url("/assets/san-clemente-map-location.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  height: 50vh;
+  max-width: 100%;
+}
+#homePageMap:hover {
+  cursor: pointer;
 }
 
+/* Footer */
+#footer{
+  display: flex;
+  justify-content: center;
+  background-color: #3a2213;
+}
+#footerLogoContainer{
+  height: 10vh;
+  width: 15vh;
+  /* margin-right: auto; */
+  margin-left: 1vw;
+  margin-bottom: auto;
+  margin-top: .5vh;
+}
+#footerLogoContainer > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+#footerButtons{
+  /* margin-bottom: auto; */
+}
+#footerButtons > li{
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 1vw;
+  color: white;
+  font-weight: bold;
+}
+#footerButtons > li:hover{
+  color: #43c0eb;
+}
 
 
 /* Media Queries */
