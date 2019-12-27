@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from './navigation';
 import Homepage from './homepage';
+import Footer from './footer';
 
 class App extends React.Component{
   constructor(props){
@@ -15,6 +16,7 @@ class App extends React.Component{
       <div>
         <Navigation/>
         <Homepage/>
+        <Footer/>
       </div>
     );
   }

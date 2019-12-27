@@ -7,8 +7,6 @@ body{
 /* Navigation */
 #navigation{
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 #logoContainer{
   height: 10vh;
@@ -197,7 +195,38 @@ body{
   cursor: pointer;
 }
 
-
+/* Footer */
+#footer{
+  display: flex;
+  justify-content: center;
+  background-color: #3a2213;
+}
+#footerLogoContainer{
+  height: 10vh;
+  width: 15vh;
+  /* margin-right: auto; */
+  margin-left: 1vw;
+  margin-bottom: auto;
+  margin-top: .5vh;
+}
+#footerLogoContainer > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+#footerButtons{
+  /* margin-bottom: auto; */
+}
+#footerButtons > li{
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 1vw;
+  color: white;
+  font-weight: bold;
+}
+#footerButtons > li:hover{
+  color: #43c0eb;
+}
 
 
 /* Media Queries */
