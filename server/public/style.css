@@ -52,6 +52,36 @@ body{
   display: none;
 }
 
+/* Footer */
+#footer{
+  display: flex;
+  justify-content: center;
+  background-color: #3a2213;
+}
+#footerLogoContainer{
+  height: 10vh;
+  width: 15vh;
+  /* margin-right: auto; */
+  margin-left: 1vw;
+  margin-bottom: auto;
+  margin-top: .5vh;
+}
+#footerLogoContainer > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+#footerButtons > li{
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 1vw;
+  color: white;
+  font-weight: bold;
+}
+#footerButtons > li:hover{
+  color: #43c0eb;
+}
+
 /* Homepage */
 #homepage-banner{
   background-image: url("/assets/homepage-banner.jpg");
@@ -195,37 +225,67 @@ body{
   cursor: pointer;
 }
 
-/* Footer */
-#footer{
+/* About Section  */
+#aboutHeader{
+  background-image: url("/assets/about-beers-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  max-width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #3a2213;
 }
-#footerLogoContainer{
-  height: 10vh;
-  width: 15vh;
-  /* margin-right: auto; */
-  margin-left: 1vw;
-  margin-bottom: auto;
-  margin-top: .5vh;
-}
-#footerLogoContainer > img {
+.aboutHeaderBkgd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,.6);
+  width: 30%;
   max-height: 100%;
-  max-width: 100%;
+  padding: .5% 0;
+  margin: auto;
 }
-#footerButtons{
-  /* margin-bottom: auto; */
-}
-#footerButtons > li{
-  list-style: none;
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 1vw;
+#aboutHeaderText{
   color: white;
+  font-size: 2.5rem;
   font-weight: bold;
+  margin: 0 5%;
 }
-#footerButtons > li:hover{
-  color: #43c0eb;
+#aboutTextAndButton{
+  width: 60%;
+  font-family: "Muli", sans-serif;
+  color: gray;
+  margin: auto;
+  font-size: 1rem;
+}
+#aboutTextButton{
+  display: flex;
+  justify-content: center;
+}
+#aboutTextButton > button{
+  background-color: #43c0eb;
+  border: none;
+  padding: 1.1vh 1.5vw;
+  font-size: 1.2rem;
+  font-weight: strong;
+  margin: 1.5%
+}
+#aboutTextButton > button:hover{
+  cursor: pointer;
+  background-color: white;
+  border: solid 1px #43c0eb;
+}
+#aboutPhotos{
+  display: flex;
+  justify-content: center;
+
+}
+#aboutPhotos > img {
+  width: 40%;
+  height: 40%;
+  margin: 1%;
+  border-radius: 2%;
 }
 
 
