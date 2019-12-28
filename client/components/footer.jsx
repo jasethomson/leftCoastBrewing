@@ -6,10 +6,10 @@ function Footer(props){
   return (
     <div id="footer">
       <div id="footerLogoContainer">
-        <img src="/assets/footer-logo.png" alt="logo" />
+        <img onClick={() => props.setView("home", {})} src="/assets/footer-logo.png" alt="logo" />
       </div>
       <ul className="menu" id="footerButtons">
-        <li className="menuOption"><a>About Us</a></li>
+        <li onClick={() => props.setView("about", {})} className="menuOption"><a>About Us</a></li>
         <li className="menuOption"><a>Beers</a></li>
         <li className="menuOption"><a>Tasting Room</a></li>
         <li className="menuOption"><a>Store</a></li>
