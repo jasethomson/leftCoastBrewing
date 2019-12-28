@@ -20,6 +20,9 @@ body{
   max-height: 100%;
   max-width: 100%;
 }
+#logoContainer > img:hover{
+  cursor: pointer;
+}
 #navButtons{
   margin-bottom: auto;
 }
