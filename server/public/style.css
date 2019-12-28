@@ -73,6 +73,9 @@ body{
   max-height: 100%;
   max-width: 100%;
 }
+#footerLogoContainer > img:hover{
+  cursor: pointer;
+}
 #footerButtons > li{
   list-style: none;
   cursor: pointer;
