@@ -21,7 +21,7 @@ function Navigation(props){
   return(
     <div id="navigation">
       <div id="logoContainer">
-        <img src="/assets/logo.jpg" alt="logo"/>
+        <img onClick={() => props.setView("home", {})} src="/assets/logo.jpg" alt="logo"/>
       </div>
       <ul className="menu" id="navButtons">
         <li className="menuOption" onClick={() => props.setView('about', {})}>About Us</li>

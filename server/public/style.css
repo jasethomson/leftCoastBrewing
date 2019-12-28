@@ -20,6 +20,9 @@ body{
   max-height: 100%;
   max-width: 100%;
 }
+#logoContainer > img:hover{
+  cursor: pointer;
+}
 #navButtons{
   margin-bottom: auto;
 }
@@ -69,6 +72,9 @@ body{
 #footerLogoContainer > img {
   max-height: 100%;
   max-width: 100%;
+}
+#footerLogoContainer > img:hover{
+  cursor: pointer;
 }
 #footerButtons > li{
   list-style: none;
