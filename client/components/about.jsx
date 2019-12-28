@@ -16,6 +16,13 @@ function About(props){
         <p>Left Coast Brewing Company is family owned and operated in the iconic surf side town of San Clemente, California. The independent brewery began its craft back in 2004. With a slew of 23+ awards under their belt, the brewery has grown to 11,000 barrels and counting.</p>
         <p><br />Left Coast prides itself on its commitment to quality and constantly strives to find premium ingredients to achieve the perfect balance of aroma and flavor. The family and brewers that comprise Left Coast are passionate about the art and craft of brewing and seek to invent recipes that they not only love drinking but love sharing. Ingredients, technique and passion poured into every pint, that is the Left Coast way.</p>
         <p><br />From our sand to yours… We’d love to share a pint with you. </p>
+        <div id="aboutTextButton">
+          <button>Find our beer!</button>
+        </div>
+      </div>
+      <div id="aboutPhotos">
+        <img src="/assets/about-image1.jpg" alt="irvine brewery"/>
+        <img src="/assets/about-image2.jpg" alt="brewery tanks" />
       </div>
     </div>
   );
