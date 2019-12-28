@@ -1,7 +1,7 @@
 import React from 'react';
 import App from './app';
 
-function Homepage(){
+function Homepage(props){
   return (
     <div>
       <div id="homepage-banner"></div>
@@ -24,9 +24,9 @@ function Homepage(){
       </div>
       <div id="aboutUs">
         <div id="homePageAboutUs">
-          <img src="/assets/leaveIconLeft.png" alt="left pointing leaf"/>
+          <img src="/assets/leafIconLeft.png" alt="left pointing leaf"/>
           <h1>ABOUT US</h1>
-          <img src="/assets/leaveIconright.png" alt="left pointing leaf" />
+          <img src="/assets/leafIconright.png" alt="left pointing leaf" />
         </div>
         <div id="aboutLine"></div>
         <p>Left Coast prides itself on its commitment to quality and constantly strives to find premium ingredients to achieve the perfect balance of aroma and flavor. The family and brewers that comprise Left Coast are passionate about the art and craft of brewing and seek to invent recipes that they not only love drinking but love sharing. Ingredients, technique and passion poured into every pint, that is the Left Coast way.</p>
